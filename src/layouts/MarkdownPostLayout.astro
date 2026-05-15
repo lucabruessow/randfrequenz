@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+
 const { frontmatter } = Astro.props;
 ---
 <meta charset="utf-8" />
@@ -7,3 +9,4 @@ const { frontmatter } = Astro.props;
 <p>Written by {frontmatter.author}</p>
 <p>Tags: {frontmatter.tags.join(", ")}</p>
 <slot />
+<Footer />
